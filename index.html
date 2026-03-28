@@ -3,3 +3,8 @@
 </video>
 
 <button onclick="nextVideo()">Next</button>
+document.addEventListener("wheel", function(e) {
+  if (e.deltaY > 0) {
+    nextVideo();
+  }
+});
