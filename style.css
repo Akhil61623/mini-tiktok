@@ -1,12 +1,12 @@
-let videos = [
-  "videos/video1.mp4",
-  "videos/video2.mp4",
-  "videos/video3.mp4"
-];
+body {
+  margin: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-let index = 0;
-
-function nextVideo() {
-  index = (index + 1) % videos.length;
-  document.getElementById("videoPlayer").src = videos[index];
+video {
+  height: 100%;
 }
